@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("../img/dinozavr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.container {
+  height: 530px;
+  overflow: hidden;
+  width: 500px;
+}
+.corusel__imgs {
+  display: flex;
+  transform: translateX(0px);
+  transition: trasnform 0.5s ease;
+  position: relative;
+}
+img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+}
+.corusel__btns {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+button {
+  border: none;
+  display: inline-block;
+  font-size: 30px;
+  background-color: beige;
+  opacity: 0.8;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.corusel__btn-two {
+  position: absolute;
+  right: -460px;  
+} 

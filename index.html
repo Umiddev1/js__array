@@ -4,10 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h2>Hello JavaScript</h2>
-  <script src="js/arr21.js"></script>
+  <div class="container">
+    <div class="corusel__imgs" id="imgs">
+        <img src="img/lion.jpg" alt="lion">
+        <img src="img/tigerrr.jpg" alt="lion">
+        <img src="img/gepard.jpg" alt="lion">
+        <img src="img/bear.jpg" alt="lion">
+      </div>
+      <div class="corusel__btns">
+        <button id="prev" class="corusel__btn" onclick="changeLeft()"><i class='bx bx-left-arrow-alt'></i></button>
+        <button id="next" class="corusel__btn corusel__btn-two" onclick="changeRight()"><i class='bx bx-right-arrow-alt'></i></button>
+      </div>
+    </div>
+  <script src="js/exam.js"></script>
 </body>
 </html>
